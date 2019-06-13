@@ -25,7 +25,6 @@ Begin
 		FETCH NEXT FROM Member_Cursor
 		into @RoleMemberName
 	END;
-
 	CLOSE Member_Cursor;
 	DEALLOCATE Member_Cursor;
 End
@@ -78,7 +77,6 @@ GO
 IF  EXISTS (SELECT * FROM sys.database_principals WHERE name = N'cpg_read_write' AND type = 'R')
 DROP ROLE [cpg_read_write]
 GO
-
 --Create the Role
 CREATE ROLE [cpg_read_write] 
 GO
