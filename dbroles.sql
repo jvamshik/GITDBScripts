@@ -1,3 +1,4 @@
+--Test GitHub pull
 --Get All Users from cpg_read_only Group and delete all users from that group.
 DECLARE @RoleName sysname
 set @RoleName = N'cpg_read_only'
